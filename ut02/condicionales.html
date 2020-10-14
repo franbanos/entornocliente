@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<!--hacer una pagina web que te pida el numero de filas y columnas y la pinte en pantalla-->
+    <table>
+        <tr>
+            <td>1</td><td>2</td>
+        </tr>
+        <tr>
+            <td>1</td><td>2</td>
+        </tr>
+    </table>
+<script>
+    // document.write("<tr>");
+    var filas=prompt("dime cuantas filas");
+    var columnas=prompt("dime cuantas columnas");
+
+    document.write("<table>");
+    for(let i=0; i<filas;i++){
+        document.write("<tr>");
+        for(let x=0; x<columnas;x++){
+            document.write("<td>",i);
+            document.write(x,"</td>");
+        }
+        document.write("</tr>");
+        }
+    
+    document.write("</table>");
+
+
+</script>
+</body>
+</html>
