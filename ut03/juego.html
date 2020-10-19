@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego</title>
+</head>
+<body>
+<script>
+    var adivina=Math.round(Math.random()*100+1);
+    var numero=prompt("Adivina el numero:");
+    var contador=0;
+
+    while(contador<=10 && numero!=adivina && numero!=undefined ) {
+        numero=prompt("Ese no es el numero, prueba con otro:");
+        contador++;
+    }
+    if(numero==adivina)
+    {
+        document.write("El ",numero," es el numero que estaba pensando, lo has adivinado con ", contador," intentos");
+    }
+    else
+    {
+        document.write("El numero que estaba buscando era el ",adivina,", has realizado ",contador," intentos");
+    }
+
+
+</script>
+</body>
+</html>
